@@ -8,12 +8,30 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Jun 2020 19:30:08 +1000</lastBuildDate><atom:link href="https://clarisasepulveda.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post 1</title>
-      <link>https://clarisasepulveda.github.io/docs/0-fabricaci%C3%B3n-digital/</link>
+      <title>0 - Fabricación digital</title>
+      <link>https://clarisasepulveda.github.io/docs/0-fabricaciondigital/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://clarisasepulveda.github.io/docs/0-fabricaci%C3%B3n-digital/</guid>
+      <guid>https://clarisasepulveda.github.io/docs/0-fabricaciondigital/</guid>
       <description>Contenido de mi Post 1.</description>
+    </item>
+    
+    <item>
+      <title>1 - Planimetría</title>
+      <link>https://clarisasepulveda.github.io/docs/1-planimetria/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://clarisasepulveda.github.io/docs/1-planimetria/</guid>
+      <description>Contenido de mi Post 2.</description>
+    </item>
+    
+    <item>
+      <title>1 - Planimetría</title>
+      <link>https://clarisasepulveda.github.io/docs/1-planimetria/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://clarisasepulveda.github.io/docs/1-planimetria/</guid>
+      <description>Contenido de mi Post 2.</description>
     </item>
     
     <item>
