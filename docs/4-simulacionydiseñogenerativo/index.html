@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>3 - Mecanizado 2.5 Ejes - Clarisa Sepúlveda I - Taller Fabricación 2021</title>
+  <title>4 - Simulación y Diseño Generativo - Clarisa Sepúlveda I - Taller Fabricación 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://clarisasepulveda.github.io/favicon.png">
@@ -106,11 +106,11 @@
       <a href="https://clarisasepulveda.github.io/docs/grupal-mecanizado/">Grupal Mecanizado</a>
     </li>
     
-    <li class="active ">
+    <li class="">
       <a href="https://clarisasepulveda.github.io/docs/3-mecanizado2.5ejes/">3 - Mecanizado 2.5 Ejes</a>
     </li>
     
-    <li class="">
+    <li class="active ">
       <a href="https://clarisasepulveda.github.io/docs/4-simulacionydise%C3%B1ogenerativo/">4 - Simulación y Diseño Generativo</a>
     </li>
     
@@ -129,75 +129,81 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">3 - Mecanizado 2.5 Ejes</h1>
+<h1 class="title">4 - Simulación y Diseño Generativo</h1>
 <div class="content ">
-  <h4 id="silla-fresia">Silla Fresia</h4>
+  <h4 id="ala-avión">Ala Avión</h4>
 <hr>
-<h2 id="paso-a-paso-mecanizado-25-ejes-en-fusion-360">Paso a Paso Mecanizado 2.5 Ejes en Fusion 360</h2>
-<h3 id="desbaste-cnc">Desbaste CNC</h3>
+<h2 id="paso-a-paso-introducción-a-la-simulación-en-fusion-360">Paso a Paso Introducción a la Simulación en Fusion 360</h2>
 <ol>
 <li>
-<p>Aislar el respaldo del asiento creando un nuevo componente desde el cuerpo y exportándolo como un archivo Fusion.</p>
+<p>Definimos el material.</p>
 </li>
 <li>
-<p>Alinear y orientar el respaldo con respecto al origen y nuestros ejes. Luego, crear un sketch rectangular donde está el respaldo, más grande que el componente y luego extruirlo, cubriendo todo el sólido.</p>
+<p>Lo segundo que hacemos es definir las restricciones. Para esto escogemos las partes ancladas, las que no se mueven. Estas quedarán con el simbolo de candado que vemos abajo.</p>
 </li>
 </ol>
-<p><img src="/img/paso0.2.png" alt="Imagen 1"></p>
-<p><img src="/img/paso1.2.png" alt="Imagen 1"></p>
+<p><img src="/img/paso0.3.png" alt="Imagen 1"></p>
 <ol start="3">
-<li>Pasamos al modo Manufactura y hacemos el setup. Escogemos la máquina &ldquo;Generic 3-axis&rdquo;. A esta fresa le alargaremos la punta para que la máquina no choque con el sólido. En stock escogemos &ldquo;relativo a un sólido&rdquo;, definimos la orientación, el modelo a cortar y el punto de origen.</li>
+<li>Definimos la carga. Para esto escogemos la parte que se lleva todo el peso. En este caso escogemos la parte que se ve indicada por la flecha. Ponemos carga 1.000 N para este caso.</li>
 </ol>
-<p><img src="/img/paso3.2.png" alt="Imagen 1"></p>
+<p><img src="/img/paso1.3.png" alt="Imagen 1"></p>
 <ol start="4">
-<li>Volvemos a Diseño&gt;P para proyectar los límites del área del respaldo. Se forma un rectángulo dibujado justo de ese porte que nos permite optimizar el mecanizado.</li>
+<li>Hacemos un Pre Check para comprobar que la instalación cumpla con los requisitos.</li>
 </ol>
-<p><img src="/img/paso4.2.png" alt="Imagen 1"></p>
+<p><img src="/img/paso2.3.png" alt="Imagen 1"></p>
 <ol start="5">
-<li>Pasamos nuevamente a Manufactura para hacer una limpieza o desbaste adaptativo, para remover piezas innecesarias y así acelerar el proceso. Usamos la misma fresa con la punta alargada para que la máquina no choque con el sólido. En gemetria, machine boundary, seleccionamos la proyección del respaldo.</li>
+<li>Finalmente, al tener todo correcto, lo resolvemos.</li>
 </ol>
-<p><img src="/img/paso5.2.png" alt="Imagen 1"></p>
-<ol start="6">
-<li>Vemos el recorrido de la fresa, la trayectoria para remover las piezas.</li>
-</ol>
-<p><img src="/img/paso6.2.png" alt="Imagen 1"></p>
-<ol start="7">
-<li>Vamos a realizar una terminación paralela. Seleccionamos todo igual al desbaste anterior, máquina, trayectoria, etc.</li>
-</ol>
-<p><img src="/img/paso7.2.png" alt="Imagen 1"></p>
+<p><img src="/img/paso3.3.png" alt="Imagen 1"></p>
+<p>Esto es lo que debiesemos tener al terminar. Acá se ve la forma en la que la carga afecta a cada parte de la pieza.</p>
+<p><img src="/img/paso4.3.png" alt="Imagen 1"></p>
+<p>Acá podemos ver como la pieza se curvaría con el peso, la forma en la que reacciona a la carga.</p>
+<p><img src="/img/paso5.3.png" alt="Imagen 1"></p>
 <p><a href="#top">[Volver Arriba]</a></p>
 <hr>
-<h2 id="vídeos">Vídeos</h2>
-<h6 id="limpieza-o-desbaste-adaptativo">Limpieza o Desbaste Adaptativo</h6>
-<div>
-    <video 
-    width="100%" 
-    height="450" 
-    autoplay muted loop controls preload>
-    <source src="/img/VideoCNCRESPALDO.mov"  type="video/mp4">
-    </video>
-</div>
-<p>Vemos que la máquina se puso roja en un sector. Esto es porque no alargamos la punta, como se indica en el el paso 3.</p>
-<h6 id="terminación-paralela">Terminación Paralela</h6>
-<div>
-    <video 
-    width="100%" 
-    height="450" 
-    autoplay muted loop controls preload>
-    <source src="/img/cncrespaldo3.mov"  type="video/mp4">
-    </video>
-</div>
-<p>Acá vemos nuevamente que la máquina se puso roja en un sector. Esto es porque no alargamos la punta, como se indica en el el paso 3.</p>
-<h6 id="simulación-completa">Simulación Completa</h6>
-<div>
-    <video 
-    width="100%" 
-    height="450" 
-    autoplay muted loop controls preload>
-    <source src="/img/cncrespaldo4.mov"  type="video/mp4">
-    </video>
-</div>
-<p>Acá ya la máquina está correcta, su punta larga por lo que no toca el sólido en el proceso.</p>
+<h4 id="ge-bracket">GE Bracket</h4>
+<hr>
+<h2 id="paso-a-paso-diseño-generativo-en-fusion-360">Paso a Paso Diseño Generativo en Fusion 360</h2>
+<ol>
+<li>Preservamos la geometría. Para este caso escogemos las piezas que aparecen en la imagen de abajo de color verde.</li>
+</ol>
+<p><img src="/img/paso0.4.png" alt="Imagen 1"></p>
+<ol start="2">
+<li>
+<p>Lo segundo que hacemos es usar el comando Geometría Obstáculo. Para esto escogemos las piezas restantes, estas quedaran de color rojo.</p>
+</li>
+<li>
+<p>Para el tercer paso, ponemos las restricciones. Para esto escogemos las partes ancladas, las que no se mueven. Estas quedarán con el simbolo de candado que vemos abajo.</p>
+</li>
+</ol>
+<p><img src="/img/paso1.4.png" alt="Imagen 1"></p>
+<ol start="4">
+<li>Definimos las cargas. Para esto escogemos la parte interior de las piezas que tienen la flecha azul en la imagen anterior. En este caso ponemos carga -1.000 N.</li>
+</ol>
+<p><img src="/img/paso2.4.png" alt="Imagen 1"></p>
+<ol start="5">
+<li>Definimos los objetivos y límites del objeto para optimizar los resultados. En este caso minimizamos la masa y usamos un coeficiente de seguridad 2.</li>
+</ol>
+<p><img src="/img/paso3.4.png" alt="Imagen 1"></p>
+<ol start="6">
+<li>Especificamos las restricciones de fabricación. Para este caso queremos estimación de costes, sin restricciones, aditivo y fresado. Todo esto lo podemos observar en la imagen de abajo.</li>
+</ol>
+<p><img src="/img/paso4.4.png" alt="Imagen 1"></p>
+<ol start="7">
+<li>Escogemos el material. En este caso escogemos 4, un titanio, iconel, plástico y aluminio.</li>
+</ol>
+<p><img src="/img/paso5.4.png" alt="Imagen 1"></p>
+<ol start="8">
+<li>
+<p>Hacemos un Pre Check para comprobar que la instalación cumpla con los requisitos.</p>
+</li>
+<li>
+<p>Por último, previsualizamos para generar una vista preliminar del resultado.</p>
+</li>
+</ol>
+<p><img src="/img/paso6.4.png" alt="Imagen 1"></p>
+<p>Así es como veremos el resultado.</p>
+<p><img src="/img/paso7.4.png" alt="Imagen 1"></p>
 <p><a href="#top">[Volver Arriba]</a></p>
 
 </div>
